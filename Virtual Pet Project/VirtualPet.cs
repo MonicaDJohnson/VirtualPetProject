@@ -96,18 +96,18 @@ namespace Virtual_Pet_Project
         }
         public void Feed()
         {
-            hungerLevel++;
+            hungerLevel--;
             if (hungerLevel < 10)
             {
-                hungerLevel = hungerLevel + 10;
+                hungerLevel = hungerLevel - 10;
             }
         }
         public void Sleep()
         {
-            sleepyLevel++;
+            sleepyLevel--;
             if (sleepyLevel < 10)
             {
-                sleepyLevel = sleepyLevel + 10;
+                sleepyLevel = sleepyLevel - 10;
             }
         }
         public void Play()
